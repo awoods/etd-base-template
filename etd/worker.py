@@ -23,3 +23,7 @@ class Worker():
         url = "https://dash.harvard.edu/rest/test"
         r = requests.get(url)
         return r.text
+
+    def not_covered(self):
+        x = "This line is not covered by a unit test"
+        return x
