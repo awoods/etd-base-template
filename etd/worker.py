@@ -13,7 +13,7 @@ class Worker():
     version = None
 
     def __init__(self):
-        self.version = os.getenv("APP_VERSION", "0.0.1")
+        self.version=os.getenv("APP_VERSION", "0.0.1")
 
     def get_version(self):
         return self.version
@@ -26,4 +26,5 @@ class Worker():
 
     def not_covered(self):
         x = "This line is not covered by a unit test"
+        y = 1 + 2
         return x
