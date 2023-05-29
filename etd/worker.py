@@ -13,7 +13,7 @@ class Worker():
     version = None
 
     def __init__(self):
-        self.version = os.getenv("APP_VERSION", "0.0.1")
+        self.version=os.getenv("APP_VERSION", "0.0.1")
 
     def get_version(self):
         return self.version
